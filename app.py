@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # OpenWeather API Key
-API_KEY = os.getenv("OpenWeather_API_KEY")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+API_KEY = st.secrets["OpenWeather_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 BASE_URL_GEOCODE = "http://api.openweathermap.org/geo/1.0/direct"
 BASE_URL_AQI = "http://api.openweathermap.org/data/2.5/air_pollution"
 BASE_URL_WEATHER = "http://api.openweathermap.org/data/2.5/weather"
