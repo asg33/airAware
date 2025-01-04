@@ -1,0 +1,10 @@
+requests
+llama-index
+torch 
+transformers
+requests
+streamlit
+groq 
+matplotlib
+seaborn
+python-dotenv
