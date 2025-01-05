@@ -66,7 +66,7 @@ def fetch_weather_and_aqi_for_area(city, area):
             return f"Error fetching AQI: {aqi_response.text}"
 
         aqi_data = aqi_response.json()
-        aqi_value = aqi_data["list"][0]["main"]["aqi"]
+        aqi_value = aqi_data["list"][0]["components"]["pm2_5"]
 
         return weather_details, aqi_value
 
